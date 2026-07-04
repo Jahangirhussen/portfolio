@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Bangla Suicidal Ideation Detection: Performance and Efficiency Benchmark of Simple and Complex Classifiers on Social Media Data",
+    "venue": "Journal of Applied Technology and Innovation",
+    "year": 2026,
+    "type": "Journal article",
+    "doi": "10.65136/jati.v10i1.11",
+    "authors": ["Jahangir Hussen", "MD Yusuf Mia", "Mst Kohily", "Shahariar Halim", "Imran Hossen"]
+  },
+  {
+    "title": "Explainable AI-Driven Bangla News Classification: Comparative Study of ML and DL Approaches",
+    "venue": "Journal of Applied Technology and Innovation",
+    "year": 2026,
+    "type": "Journal article",
+    "doi": "10.65136/jati.v10i1.325",
+    "authors": ["Jahangir Hussen", "MST. Najnin Akter Emu", "MD Yusuf Mia", "Md Sifat Mahmud", "Md Mazharul Haque Emon", "Rakib Chowdhury"]
+  },
+  {
+    "title": "Predicting Heart Disease with Machine Learning: A Comparative Analysis of Models",
+    "venue": "Sonargaon University Journal",
+    "year": 2025,
+    "type": "Journal article",
+    "doi": "",
+    "authors": ["Jahangir Hussen", "Madhabi Rani Kar"]
+  },
+  {
+    "title": "Green AI for Sustainable Development in Circular Economies",
+    "venue": "Achieving the Sustainable Development Goals Through Green Innovation",
+    "year": 2025,
+    "type": "Book chapter",
+    "doi": "10.4018/979-8-3373-7694-3.ch003",
+    "authors": ["Jahangir Hussen", "Mohammad Rashed Hasan Polas", "Taspia Momotaz", "Rafiya Asma Eva", "Mst. Najnin Akter Emu"]
+  },
+  {
+    "title": "Bangla Suicidal Intention Dataset",
+    "venue": "Zenodo",
+    "year": 2025,
+    "type": "Dataset",
+    "doi": "10.5281/ZENODO.17528394",
+    "authors": ["Jahangir Hussen"],
+    "meta": "13,288 Bengali social media texts · Binary Classification"
+  },
+  {
+    "title": "Defending Digital Discourse: Developing a Toxic Comment Classifier for Fostering Healthy Online Communities",
+    "venue": "International Journal of Computer Science and Engineering",
+    "year": 2024,
+    "type": "Journal article",
+    "doi": "10.14445/23488387/ijcse-v11i10p104",
+    "authors": ["Naimul Hasan Shadesh", "Jahangir Hussen", "Zannatul Ferdous"]
+  }
+]

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Play Zone | Jahangir Hussen</title>
+  <meta name="description" content="Play mini-games — Reaction Speed Test, Tic Tac Toe, Flappy Box." />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title" data-reveal="fade">Play Zone</h1>
+        <p class="section__subtitle" data-reveal="fade">Take a break — try one of these mini-games</p>
+
+        <div class="grid grid--3">
+          <div class="game-card card reveal">
+            <h3 class="game-card__title">Reaction Speed Test</h3>
+            <p class="game-card__desc">Test how fast your reflexes are.</p>
+            <a href="games/reaction-speed-test/index.html" class="btn">Play Now</a>
+          </div>
+          <div class="game-card card reveal">
+            <h3 class="game-card__title">Tic Tac Toe</h3>
+            <p class="game-card__desc">Classic Tic Tac Toe vs an unbeatable AI.</p>
+            <a href="games/tic-tac-toe/index.html" class="btn">Play Now</a>
+          </div>
+          <div class="game-card card reveal">
+            <h3 class="game-card__title">Flappy Box</h3>
+            <p class="game-card__desc">Dodge obstacles and rack up your score.</p>
+            <a href="games/flappy-box/index.html" class="btn">Play Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/component-loader.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/games.js"></script>
+</body>
+</html>

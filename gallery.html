@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Jahangir Hussen</title>
+  <meta name="description" content="Photo gallery of Jahangir Hussen — events, workshops, and achievements." />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title" data-reveal="fade">Gallery</h1>
+        <p class="section__subtitle" data-reveal="fade">Events, workshops, and moments</p>
+
+        <div class="gallery-grid">
+          <div class="gallery-card reveal">
+            <img src="assets/images/gallery/campus-01.jpg" alt="Campus photo 1" class="gallery-card__image" loading="lazy" />
+            <div class="gallery-card__overlay"><p class="gallery-card__caption">Campus</p></div>
+          </div>
+          <div class="gallery-card reveal">
+            <img src="assets/images/gallery/campus-02.jpg" alt="Campus photo 2" class="gallery-card__image" loading="lazy" />
+            <div class="gallery-card__overlay"><p class="gallery-card__caption">Campus</p></div>
+          </div>
+          <div class="gallery-card reveal">
+            <img src="assets/images/gallery/bross-restaurant.jpg" alt="Bross Slice and Grill" class="gallery-card__image" loading="lazy" />
+            <div class="gallery-card__overlay"><p class="gallery-card__caption">Bross Slice and Grill — client project</p></div>
+          </div>
+          <div class="gallery-card reveal">
+            <img src="assets/images/gallery/golf-field.jpg" alt="Golf field" class="gallery-card__image" loading="lazy" />
+            <div class="gallery-card__overlay"><p class="gallery-card__caption">Golf field</p></div>
+          </div>
+          <div class="gallery-card reveal">
+            <img src="assets/images/gallery/memorable-01.jpg" alt="Memorable moment 1" class="gallery-card__image" loading="lazy" />
+            <div class="gallery-card__overlay"><p class="gallery-card__caption">Memorable moment</p></div>
+          </div>
+          <div class="gallery-card reveal">
+            <img src="assets/images/gallery/moment-01.jpg" alt="Moment 1" class="gallery-card__image" loading="lazy" />
+            <div class="gallery-card__overlay"><p class="gallery-card__caption">Moment</p></div>
+          </div>
+          <div class="gallery-card reveal">
+            <img src="assets/images/gallery/moment-02.jpg" alt="Moment 2" class="gallery-card__image" loading="lazy" />
+            <div class="gallery-card__overlay"><p class="gallery-card__caption">Moment</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox"><img id="lightbox-img" src="" alt="Preview" /></div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/component-loader.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      document.querySelectorAll('.gallery-card__image').forEach((img) => {
+        img.addEventListener('click', () => {
+          lightboxImg.src = img.src;
+          lightbox.classList.add('active');
+        });
+      });
+      lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+    });
+  </script>
+</body>
+</html>

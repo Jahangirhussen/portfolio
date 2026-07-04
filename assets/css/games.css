@@ -1,0 +1,67 @@
+/* ===== Shared Game Page Styles ===== */
+
+.game-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+  text-align: center;
+  background: #050505;
+  color: #fff;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.game-page h1 {
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #00e5ff, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.game-page__board { margin: 24px 0; }
+.game-page__score { font-size: 1.4rem; font-weight: 700; margin-bottom: 16px; }
+.game-page a.back-link { margin-top: 24px; color: #00e5ff; font-weight: 600; text-decoration: none; }
+
+/* Reaction Speed Test */
+.reaction-box {
+  width: 280px; height: 280px; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; font-weight: 700; cursor: pointer; user-select: none;
+  background: #16161a; border: 1px solid rgba(255,255,255,0.08); transition: background 0.2s;
+  position: relative; overflow: hidden;
+}
+.reaction-box.wait { background: #db4437; }
+.reaction-box.go { background: #0f9d58; }
+.reaction-ripple {
+  position: absolute; border-radius: 50%; background: rgba(255,255,255,0.4);
+  transform: scale(0); animation: rippleAnim 0.6s ease-out forwards;
+}
+@keyframes rippleAnim { to { transform: scale(4); opacity: 0; } }
+.score-popup {
+  position: absolute; font-weight: 800; color: #00e5ff; animation: scorePop 0.8s ease-out forwards;
+  pointer-events: none;
+}
+@keyframes scorePop { 0% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(-40px); } }
+
+/* Tic Tac Toe */
+.ttt-board { display: grid; grid-template-columns: repeat(3, 90px); gap: 8px; }
+.ttt-cell {
+  width: 90px; height: 90px; background: #16161a; border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  font-size: 2.2rem; font-weight: 800; cursor: pointer;
+}
+.ttt-cell.x { color: #00e5ff; animation: fadeIn 0.3s ease; }
+.ttt-cell.o { color: #a855f7; animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
+
+/* Flappy Box */
+#flappy-canvas { background: #0f0f12; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); }
+.shake { animation: shakeAnim 0.3s; }
+@keyframes shakeAnim {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}

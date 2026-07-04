@@ -1,0 +1,131 @@
+{
+  "machine-learning": [
+    {
+      "title": "Bangla Suicidal Ideation Detection",
+      "description": "Benchmarking simple and complex classifiers for detecting suicidal ideation in Bangla social media text.",
+      "tags": ["Python", "NLP", "Scikit-learn", "Deep Learning"],
+      "demo": "",
+      "source": "https://github.com/Jahangirhussen/Thesis-Bangla-Suicidal-Ideation-Detection-Final-Year-Thesis"
+    },
+    {
+      "title": "XAI Bank Loan Prediction",
+      "description": "Explainable AI approach to loan approval prediction (Random Forest, 98.56% accuracy), exposing model reasoning behind each decision.",
+      "tags": ["Python", "XAI", "Scikit-learn", "Kaggle"],
+      "demo": "https://www.kaggle.com/code/jahangirhussen/xai-bank-loan-prediction-random-forest-98-56",
+      "source": "https://www.kaggle.com/datasets/itssuru/loan-data"
+    },
+    {
+      "title": "Heart Disease Prediction",
+      "description": "Comparative analysis of machine learning models for predicting heart disease risk.",
+      "tags": ["Python", "Pandas", "Scikit-learn"],
+      "demo": "",
+      "source": ""
+    }
+  ],
+  "web": [
+    {
+      "title": "Al Haayaat Ltd — Shopify Store",
+      "description": "Live Shopify storefront built with Liquid, tailored theme design and checkout flow.",
+      "tags": ["Shopify", "Liquid", "JavaScript"],
+      "demo": "https://alhaayaatltd.co.uk/",
+      "source": "https://drive.google.com/drive/folders/1eruxWGGV1fi_uYHk7cRqg-uClbiG2-7Y"
+    },
+    {
+      "title": "Real Deal IT Center — Website",
+      "description": "Live company website built and maintained as Lead Developer at Real Deal IT Center.",
+      "tags": ["WordPress", "PHP", "JavaScript"],
+      "demo": "https://realdealitcenter.com/",
+      "source": "https://drive.google.com/drive/folders/1erGGV1fi_uYHk7cRqg-uClbiG2-7Y"
+    },
+    {
+      "title": "Bross Slice and Grill — Restaurant",
+      "description": "Live restaurant ordering website built on WordPress + WooCommerce.",
+      "tags": ["WordPress", "WooCommerce", "PHP"],
+      "demo": "https://brossliceandgrill.co.uk/",
+      "source": "https://drive.google.com/drive/folders/1erGdsadGV1fi_uYHk7cRqg-uClbiG2-7Y"
+    },
+    {
+      "title": "WINWINIT — Digital Agency Website",
+      "description": "Seven-page digital agency website template — services, portfolio, packages, blog, and contact — built with vanilla HTML/CSS/JS and shared components.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "demo": "",
+      "source": "https://github.com/Jahangirhussen/winwinit"
+    }
+  ],
+  "frontend": [
+    {
+      "title": "BMI Calculator",
+      "description": "Responsive BMI calculator with instant health category feedback.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "demo": "",
+      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects"
+    },
+    {
+      "title": "Typing Speed Test",
+      "description": "Real-time typing speed and accuracy tracker.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "demo": "",
+      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects"
+    },
+    {
+      "title": "URL Shortener",
+      "description": "Lightweight URL shortening tool with a clean UI.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "demo": "",
+      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects"
+    },
+    {
+      "title": "Calculator",
+      "description": "Basic calculator built with native HTML, CSS, and JavaScript.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "demo": "",
+      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects"
+    },
+    {
+      "title": "Multi-page Portfolio",
+      "description": "This portfolio site — multi-page, componentized, dual-theme.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "demo": "",
+      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects"
+    }
+  ],
+  "games": [
+    {
+      "title": "Snake Game",
+      "description": "Classic Snake game built with Python and Pygame, with gameplay video output.",
+      "tags": ["Python", "Pygame"],
+      "demo": "https://youtube.com/playlist?list=PLagoYA7rdKmHu4p2rM7y6GGN6UUe_6-10",
+      "source": "https://github.com/Jahangirhussen/Pygame"
+    },
+    {
+      "title": "Tic Tac Toe AI",
+      "description": "Tic Tac Toe, Human vs AI — Python/Pygame original, plus a playable JS/minimax version in this site's Play Zone.",
+      "tags": ["Python", "Pygame", "JavaScript", "Minimax"],
+      "demo": "games/tic-tac-toe/index.html",
+      "source": "https://github.com/Jahangirhussen/Pygame"
+    },
+    {
+      "title": "Block Dodger",
+      "description": "Reflex-based dodging game built with Python and Pygame.",
+      "tags": ["Python", "Pygame"],
+      "demo": "https://youtube.com/playlist?list=PLagoYA7rdKmHu4p2rM7y6GGN6UUe_6-10",
+      "source": "https://github.com/Jahangirhussen/Pygame"
+    }
+  ],
+  "other": [
+    {
+      "title": "Railway Gate System",
+      "description": "Automated railway gate control system demo (IoT/hardware).",
+      "tags": ["IoT", "Hardware"],
+      "demo": "https://youtube.com/shorts/PkCTtvkmNoY",
+      "source": ""
+    },
+    {
+      "title": "WiFi Deauther",
+      "description": "WiFi deauthentication demo tool for wireless security research/education.",
+      "tags": ["Security", "Networking"],
+      "demo": "https://youtu.be/QScTamkDT70",
+      "source": ""
+    }
+  ]
+}

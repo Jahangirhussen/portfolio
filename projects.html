@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Jahangir Hussen</title>
+  <meta name="description" content="Machine learning, web, frontend, and game projects by Jahangir Hussen." />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title" data-reveal="fade">Projects</h1>
+        <p class="section__subtitle" data-reveal="fade">Machine learning, web, frontend, and game projects</p>
+
+        <div class="projects-filter">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="machine-learning">Machine Learning</button>
+          <button data-filter="web">Web</button>
+          <button data-filter="frontend">Frontend</button>
+          <button data-filter="games">Games</button>
+          <button data-filter="other">Other</button>
+        </div>
+
+        <div class="grid grid--3" id="projects-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/component-loader.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script>
+    function projectCard(p) {
+      return `
+        <div class="project-card card reveal">
+          <div class="project-card__body">
+            <h3 class="project-card__title">${p.title}</h3>
+            <p class="project-card__desc">${p.description}</p>
+            <div class="project-card__tags">${p.tags.map((t) => `<span class="tag">${t}</span>`).join('')}</div>
+            ${p.demo ? `<div class="project-card__links"><a href="${p.demo}" target="_blank" rel="noopener">Live Demo</a></div>` : ''}
+          </div>
+        </div>
+      `;
+    }
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const grid = document.getElementById('projects-grid');
+      const res = await fetch('data/projects.json');
+      const data = await res.json();
+      const categories = Object.keys(data);
+
+      function render(filter) {
+        const items = filter === 'all' ? categories.flatMap((c) => data[c]) : data[filter] || [];
+        grid.innerHTML = items.map(projectCard).join('');
+        document.dispatchEvent(new Event('components:loaded'));
+      }
+
+      document.querySelectorAll('.projects-filter button').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.projects-filter button').forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          render(btn.dataset.filter);
+        });
+      });
+
+      render('all');
+    });
+  </script>
+</body>
+</html>

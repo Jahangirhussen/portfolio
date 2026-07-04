@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Jahangir Hussen</title>
+  <meta name="description" content="Publications and research by Jahangir Hussen — Bangla NLP, Explainable AI, Healthcare AI, Green AI." />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title" data-reveal="fade">Research &amp; Publications</h1>
+        <p class="section__subtitle" data-reveal="fade">Bangla NLP · Explainable AI · Healthcare AI · Misinformation Detection · Green AI</p>
+
+        <div class="mb-48" style="max-width:420px;margin-left:auto;margin-right:auto;">
+          <input type="text" id="research-search" placeholder="Search publications..."
+            style="width:100%;padding:12px 16px;border-radius:8px;border:1px solid var(--border-color);background:var(--bg-glass);color:var(--text-main);" />
+        </div>
+
+        <div id="publications-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/component-loader.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script>
+    function publicationCard(p) {
+      const doiLink = p.doi ? `https://doi.org/${p.doi}` : '';
+      return `
+        <div class="publication-card reveal">
+          <h3 class="publication-card__title">${p.title}</h3>
+          <p class="publication-card__authors">${p.authors.join(', ')} · ${p.venue} · ${p.year} · ${p.type}</p>
+          ${p.meta ? `<p class="publication-card__abstract">${p.meta}</p>` : ''}
+          ${doiLink ? `<a href="${doiLink}" target="_blank" rel="noopener" class="publication-card__link">View DOI</a>` : ''}
+        </div>
+      `;
+    }
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const list = document.getElementById('publications-list');
+      const res = await fetch('data/publications.json');
+      const publications = await res.json();
+      list.innerHTML = publications.map(publicationCard).join('');
+      document.dispatchEvent(new Event('components:loaded'));
+
+      document.getElementById('research-search').addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        document.querySelectorAll('.publication-card').forEach((card) => {
+          card.style.display = card.textContent.toLowerCase().includes(query) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

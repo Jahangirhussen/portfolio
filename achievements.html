@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achievements | Jahangir Hussen</title>
+  <meta name="description" content="Competitive programming achievements of Jahangir Hussen — ICPC, LeetCode, Codeforces, CodeChef." />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title" data-reveal="fade">Achievements</h1>
+        <p class="section__subtitle" data-reveal="fade">Competitive programming &amp; contest highlights</p>
+
+        <div class="grid grid--3" id="achievements-grid"></div>
+
+        <div class="grid grid--3 mt-48">
+          <div class="card reveal text-center">
+            <h3 class="gradient-text">LeetCode</h3>
+            <p class="text-secondary mt-16">jahangirhussen</p>
+            <p class="text-secondary">514+ solved · Max rating 1665</p>
+          </div>
+          <div class="card reveal text-center">
+            <h3 class="gradient-text">Codeforces</h3>
+            <p class="text-secondary mt-16">jahangirhussen5011</p>
+            <p class="text-secondary">Pupil · Max rating 1220 · 240+ solved</p>
+          </div>
+          <div class="card reveal text-center">
+            <h3 class="gradient-text">CodeChef</h3>
+            <p class="text-secondary mt-16">jahangirhussen</p>
+            <p class="text-secondary">116+ solved · Max rating 1480+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/component-loader.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const grid = document.getElementById('achievements-grid');
+      const res = await fetch('data/achievements.json');
+      const achievements = await res.json();
+      grid.innerHTML = achievements.map((a) => `
+        <div class="achievement-card card reveal">
+          <h3 class="achievement-card__title">${a.title}</h3>
+          <p class="achievement-card__desc">${a.desc}</p>
+        </div>
+      `).join('');
+      document.dispatchEvent(new Event('components:loaded'));
+    });
+  </script>
+</body>
+</html>

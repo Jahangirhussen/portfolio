@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Jahangir Hussen</title>
+  <meta name="description" content="Get in touch with Jahangir Hussen — email, phone, and social links." />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title" data-reveal="fade">Contact</h1>
+        <p class="section__subtitle" data-reveal="fade">Open to research collaborations, freelance work, and interesting problems</p>
+
+        <div class="grid grid--2" style="align-items:start;">
+          <div class="card glass reveal">
+            <h3 class="mb-24">Contact Information</h3>
+            <p class="text-secondary mb-16"><strong class="text-main">Full Name:</strong> Jahangir Hussen</p>
+            <p class="text-secondary mb-16"><strong class="text-main">Email:</strong>
+              <a href="mailto:jahangirhussen.programmer@gmail.com">jahangirhussen.programmer@gmail.com</a>
+            </p>
+            <p class="text-secondary mb-16"><strong class="text-main">Phone:</strong> +8801849620018</p>
+            <p class="text-secondary mb-24"><strong class="text-main">Location:</strong> Dhaka, Bangladesh</p>
+
+            <h4 class="mb-16">Social Links</h4>
+            <div class="flex-col gap-8">
+              <a href="https://github.com/Jahangirhussen" target="_blank" rel="noopener" class="text-secondary">GitHub — github.com/Jahangirhussen</a>
+              <a href="https://linkedin.com/in/jahangirhussen" target="_blank" rel="noopener" class="text-secondary">LinkedIn — linkedin.com/in/jahangirhussen</a>
+              <a href="https://kaggle.com/jahangirhussen" target="_blank" rel="noopener" class="text-secondary">Kaggle — kaggle.com/jahangirhussen</a>
+              <a href="https://researchgate.net/profile/Jahangir-Hussen" target="_blank" rel="noopener" class="text-secondary">ResearchGate — researchgate.net/profile/Jahangir-Hussen</a>
+              <a href="https://orcid.org/0009-0007-1024-6644" target="_blank" rel="noopener" class="text-secondary">ORCID — 0009-0007-1024-6644</a>
+              <a href="https://leetcode.com/u/jahangirhussen" target="_blank" rel="noopener" class="text-secondary">LeetCode — leetcode.com/u/jahangirhussen</a>
+              <a href="https://codeforces.com/profile/jahangir_hussen" target="_blank" rel="noopener" class="text-secondary">Codeforces — codeforces.com/profile/jahangir_hussen</a>
+              <a href="https://fb.com/jahangirhussenkawsar06" target="_blank" rel="noopener" class="text-secondary">Facebook — fb.com/jahangirhussenkawsar06</a>
+              <a href="https://instagram.com/jahangirhussenkawsar" target="_blank" rel="noopener" class="text-secondary">Instagram — instagram.com/jahangirhussenkawsar</a>
+            </div>
+
+            <div class="flex gap-16 mt-24" style="flex-wrap:wrap;">
+              <a href="assets/pdf/Jahangir_Hussen_CV.pdf" download class="btn">Download Resume</a>
+              <a href="mailto:jahangirhussen.programmer@gmail.com" class="btn btn--outline">Hire Me</a>
+            </div>
+          </div>
+
+          <form class="contact-form card reveal" id="contact-form">
+            <h3 class="mb-16">Send a Message</h3>
+            <div class="contact-form__field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="contact-form__field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="contact-form__field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" />
+            </div>
+            <div class="contact-form__field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+            <p class="contact-form__status" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/component-loader.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const status = document.getElementById('form-status');
+      status.textContent = 'Sending...';
+      setTimeout(() => {
+        status.textContent = 'Message sent! Thank you for reaching out.';
+        e.target.reset();
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

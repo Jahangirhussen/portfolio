@@ -1,0 +1,2 @@
+/* Page-specific tweaks for Flappy Box (shared rules in assets/css/games.css) */
+#score, #best { color: #00e5ff; font-weight: 800; }

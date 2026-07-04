@@ -1,0 +1,3 @@
+/* Page-specific tweaks for Tic Tac Toe (shared rules in assets/css/games.css) */
+.ttt-cell { transition: background 0.2s; }
+.ttt-cell:hover:empty { background: #1c1c22; }

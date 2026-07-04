@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jahangir Hussen | CSE Graduate · ML & NLP Researcher</title>
+  <meta name="description" content="Jahangir Hussen — CSE Graduate, ML & NLP Researcher, Data Science & AI Enthusiast, Lead Developer from Dhaka, Bangladesh." />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <div id="welcome-placeholder"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero__text" data-reveal="left">
+        <p class="hero__greeting">Hi, I'm</p>
+        <h1 class="hero__name gradient-text">Jahangir Hussen</h1>
+        <h2 class="hero__title" id="typing-target" data-phrases="CSE Graduate|ML Researcher|NLP Enthusiast|AI Developer|Frontend Developer|Lead Developer|Competitive Programmer"></h2>
+        <p class="hero__bio">
+          Computer Science &amp; Engineering graduate from Sonargaon University, passionate about
+          Artificial Intelligence, Machine Learning, Natural Language Processing, and Explainable AI.
+          I build impactful AI solutions and solve real-world challenges through research and technology.
+        </p>
+        <div class="hero__cta">
+          <a href="projects.html" class="btn">View Projects</a>
+          <a href="resume.html" class="btn btn--outline">Resume</a>
+        </div>
+      </div>
+      <div class="hero__image-wrap" data-reveal="right">
+        <div class="hero__ring hero__ring--1"></div>
+        <div class="hero__ring hero__ring--2"></div>
+        <div class="hero__orbit-dot hero__orbit-dot--1"></div>
+        <div class="hero__orbit-dot hero__orbit-dot--2"></div>
+        <div class="hero__image float-y">
+          <img src="assets/images/profile/profile-photo.jpg" alt="Jahangir Hussen" />
+          <div class="hero__scan-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section--alt">
+      <div class="container grid grid--4">
+        <div class="stats__item text-center">
+          <h2 class="stats__number" data-count="870">0</h2>
+          <p class="text-muted">Problems Solved</p>
+        </div>
+        <div class="stats__item text-center">
+          <h2 class="stats__number" data-count="6">0</h2>
+          <p class="text-muted">Publications</p>
+        </div>
+        <div class="stats__item text-center">
+          <h2 class="stats__number" data-count="12">0</h2>
+          <p class="text-muted">Projects</p>
+        </div>
+        <div class="stats__item text-center">
+          <h2 class="stats__number" data-count="1665">0</h2>
+          <p class="text-muted">LeetCode Max Rating</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2" style="align-items:start;">
+          <div class="card reveal">
+            <h3 class="mb-16">About Me</h3>
+            <p class="text-secondary">
+              CSE graduate from Sonargaon University, passionate about AI, Machine Learning, NLP, and
+              Explainable AI. Currently Lead Developer at Real Deal IT Center, and an active competitive
+              programmer across LeetCode, Codeforces, and CodeChef.
+            </p>
+            <a href="about.html" class="btn btn--outline mt-24">More About Me</a>
+          </div>
+          <div class="card reveal">
+            <h3 class="mb-16">Latest Research</h3>
+            <p class="text-secondary">
+              <strong class="text-main">Bangla Suicidal Ideation Detection</strong> — benchmarking simple
+              and complex classifiers on 13,288 Bengali social media texts. Published in the Journal of
+              Applied Technology and Innovation, 2026.
+            </p>
+            <a href="research.html" class="btn btn--outline mt-24">View Publications</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--alt" style="padding: 40px 0; overflow: hidden;">
+      <div class="marquee">
+        <div class="marquee__track">
+          <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">NLP</span>
+          <span class="tag">Scikit-learn</span><span class="tag">React.js</span><span class="tag">WordPress</span>
+          <span class="tag">JavaScript</span><span class="tag">MySQL</span><span class="tag">Git</span>
+          <span class="tag">Explainable AI</span><span class="tag">Shopify</span><span class="tag">MongoDB</span>
+          <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">NLP</span>
+          <span class="tag">Scikit-learn</span><span class="tag">React.js</span><span class="tag">WordPress</span>
+          <span class="tag">JavaScript</span><span class="tag">MySQL</span><span class="tag">Git</span>
+          <span class="tag">Explainable AI</span><span class="tag">Shopify</span><span class="tag">MongoDB</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title" data-reveal="zoom">Featured Projects</h2>
+        <p class="section__subtitle" data-reveal="zoom">A few things I've built recently</p>
+        <div class="grid grid--3" id="home-projects-grid"></div>
+        <div class="text-center mt-48">
+          <a href="projects.html" class="btn">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title" data-reveal="fade">Achievements</h2>
+        <p class="section__subtitle" data-reveal="fade">Competitive programming highlights</p>
+        <div class="grid grid--3">
+          <div class="card reveal text-center">
+            <h3 class="gradient-text">LeetCode</h3>
+            <p class="text-secondary mt-16">514+ solved · Max rating 1665</p>
+          </div>
+          <div class="card reveal text-center">
+            <h3 class="gradient-text">Codeforces</h3>
+            <p class="text-secondary mt-16">Pupil · Max rating 1220</p>
+          </div>
+          <div class="card reveal text-center">
+            <h3 class="gradient-text">CodeChef</h3>
+            <p class="text-secondary mt-16">116+ solved · Max rating 1480+</p>
+          </div>
+        </div>
+        <div class="text-center mt-48">
+          <a href="achievements.html" class="btn btn--outline">All Achievements</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title" data-reveal="fade">Explore More</h2>
+        <p class="section__subtitle" data-reveal="fade">More of what's on this site</p>
+        <div class="feature-grid">
+          <a href="skills.html" class="feature-card feature-card--blue" data-reveal="zoom">
+            <div class="feature-card__icon">🧠</div>
+            <span class="feature-card__badge">28+ skills</span>
+            <h3 class="feature-card__title">Skills</h3>
+            <p class="feature-card__desc">Languages, AI/ML frameworks, web stack, and tools.</p>
+          </a>
+          <a href="experience.html" class="feature-card feature-card--green" data-reveal="zoom">
+            <div class="feature-card__icon">💼</div>
+            <span class="feature-card__badge">Since 2024</span>
+            <h3 class="feature-card__title">Experience</h3>
+            <p class="feature-card__desc">Lead Developer role at Real Deal IT Center.</p>
+          </a>
+          <a href="gallery.html" class="feature-card feature-card--yellow" data-reveal="zoom">
+            <div class="feature-card__icon">📸</div>
+            <span class="feature-card__badge">Photos</span>
+            <h3 class="feature-card__title">Gallery</h3>
+            <p class="feature-card__desc">Events, workshops, and moments.</p>
+          </a>
+          <a href="play-zone.html" class="feature-card feature-card--red" data-reveal="zoom">
+            <div class="feature-card__icon">🎮</div>
+            <span class="feature-card__badge">3 games</span>
+            <h3 class="feature-card__title">Play Zone</h3>
+            <p class="feature-card__desc">Reaction test, Tic Tac Toe AI, Flappy Box.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container text-center">
+        <h2 class="section__title" data-reveal="fade">Let's Build Something Together</h2>
+        <p class="section__subtitle">Open to research collaborations, freelance work, and interesting problems.</p>
+        <a href="contact.html" class="btn">Get In Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/component-loader.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/typing.js"></script>
+  <script>
+    document.addEventListener('components:loaded', async () => {
+      const res = await fetch('data/projects.json');
+      const data = await res.json();
+      const featured = [data['machine-learning'][0], data.web[0], data.frontend[3]].filter(Boolean);
+      document.getElementById('home-projects-grid').innerHTML = featured.map((p) => `
+        <div class="project-card card reveal">
+          <div class="project-card__body">
+            <h3 class="project-card__title">${p.title}</h3>
+            <p class="project-card__desc">${p.description}</p>
+            <div class="project-card__tags">${p.tags.map((t) => `<span class="tag">${t}</span>`).join('')}</div>
+          </div>
+        </div>
+      `).join('');
+    });
+  </script>
+</body>
+</html>

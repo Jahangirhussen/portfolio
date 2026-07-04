@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Jahangir Hussen</title>
+  <meta name="description" content="Resume / CV of Jahangir Hussen." />
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section text-center">
+      <div class="container">
+        <h1 class="section__title" data-reveal="fade">Resume</h1>
+        <p class="section__subtitle" data-reveal="fade">CSE Graduate · ML &amp; NLP Researcher · Lead Developer</p>
+
+        <div class="card reveal" style="max-width:500px;margin:0 auto;padding:48px 24px;">
+          <p class="text-secondary mb-24">Download my full resume as a PDF.</p>
+          <a href="assets/pdf/Jahangir_Hussen_CV.pdf" download class="btn">Download Resume (PDF)</a>
+        </div>
+
+        <div class="mt-48" id="resume-preview-wrap">
+          <iframe id="resume-preview" src="assets/pdf/Jahangir_Hussen_CV.pdf" title="Jahangir Hussen Resume"
+            style="width:100%;max-width:900px;height:800px;border:1px solid var(--border-color);border-radius:12px;"></iframe>
+        </div>
+        <script>
+          fetch('assets/pdf/Jahangir_Hussen_CV.pdf', { method: 'HEAD' }).then((res) => {
+            const size = +res.headers.get('content-length');
+            if (!size) {
+              document.getElementById('resume-preview-wrap').innerHTML =
+                '<p class="text-secondary">Resume PDF not uploaded yet — preview will appear here once it is.</p>';
+            }
+          });
+        </script>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/component-loader.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/particles.js"></script>
+</body>
+</html>
