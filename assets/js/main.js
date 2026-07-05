@@ -6,7 +6,20 @@ function initNavbar() {
   const links = document.querySelector('.navbar__links');
 
   if (burger && links) {
-    burger.addEventListener('click', () => links.classList.toggle('active'));
+    const closeMenu = () => {
+      links.classList.remove('active');
+      document.body.classList.remove('nav-open');
+      burger.textContent = '☰';
+    };
+    burger.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('active');
+      document.body.classList.toggle('nav-open', isOpen);
+      burger.textContent = isOpen ? '✕' : '☰';
+    });
+    links.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) closeMenu();
+    });
   }
 
   const currentPage = location.pathname.split('/').pop() || 'index.html';

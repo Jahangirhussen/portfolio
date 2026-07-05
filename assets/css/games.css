@@ -27,7 +27,7 @@
 
 /* Reaction Speed Test */
 .reaction-box {
-  width: 280px; height: 280px; border-radius: 16px;
+  width: 280px; height: 280px; max-width: 82vw; max-height: 82vw; border-radius: 16px;
   display: flex; align-items: center; justify-content: center;
   font-size: 1.2rem; font-weight: 700; cursor: pointer; user-select: none;
   background: #16161a; border: 1px solid rgba(255,255,255,0.08); transition: background 0.2s;
@@ -58,10 +58,16 @@
 @keyframes fadeIn { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
 
 /* Flappy Box */
-#flappy-canvas { background: #0f0f12; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); }
+#flappy-canvas { background: #0f0f12; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); max-width: 100%; height: auto; }
 .shake { animation: shakeAnim 0.3s; }
 @keyframes shakeAnim {
   0%, 100% { transform: translateX(0); }
   25% { transform: translateX(-6px); }
   75% { transform: translateX(6px); }
+}
+
+@media (max-width: 400px) {
+  .ttt-board { grid-template-columns: repeat(3, 84px); }
+  .ttt-cell { width: 84px; height: 84px; }
+  .game-page { padding: 16px; }
 }
