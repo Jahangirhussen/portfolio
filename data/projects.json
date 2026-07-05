@@ -55,31 +55,31 @@
   "frontend": [
     {
       "title": "BMI Calculator",
-      "description": "Responsive BMI calculator with instant health category feedback.",
+      "description": "A responsive BMI calculator that instantly calculates Body Mass Index and provides health-related feedback through a clean and user-friendly interface.",
       "tags": ["HTML", "CSS", "JavaScript"],
-      "demo": "",
-      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects"
+      "demo": "https://jahangirhussen.github.io/HTML_CSS_JS_native_Projects/BMI%20project/",
+      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects/tree/main/BMI%20project"
     },
     {
       "title": "Typing Speed Test",
-      "description": "Real-time typing speed and accuracy tracker.",
+      "description": "An interactive typing speed test application that measures typing speed and accuracy in real time with a smooth user experience.",
       "tags": ["HTML", "CSS", "JavaScript"],
-      "demo": "",
-      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects"
+      "demo": "https://jahangirhussen.github.io/HTML_CSS_JS_native_Projects/Typing%20Speed%20Test/",
+      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects/tree/main/Typing%20Speed%20Test"
     },
     {
       "title": "URL Shortener",
-      "description": "Lightweight URL shortening tool with a clean UI.",
+      "description": "A simple and efficient URL shortener application that converts long URLs into shorter and easier-to-share links.",
       "tags": ["HTML", "CSS", "JavaScript"],
-      "demo": "",
-      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects"
+      "demo": "https://jahangirhussen.github.io/HTML_CSS_JS_native_Projects/URL%20shorter%20by%20jahangirhussen/",
+      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects/tree/main/URL%20shorter%20by%20jahangirhussen"
     },
     {
-      "title": "Calculator",
-      "description": "Basic calculator built with native HTML, CSS, and JavaScript.",
+      "title": "Calculator App",
+      "description": "A modern calculator application supporting essential arithmetic operations with a responsive and clean interface.",
       "tags": ["HTML", "CSS", "JavaScript"],
-      "demo": "",
-      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects"
+      "demo": "https://jahangirhussen.github.io/HTML_CSS_JS_native_Projects/calculator%20native/",
+      "source": "https://github.com/Jahangirhussen/HTML_CSS_JS_native_Projects/tree/main/calculator%20native"
     },
     {
       "title": "Multi-page Portfolio",
