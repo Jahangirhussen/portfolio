@@ -51,7 +51,10 @@
             <h3 class="project-card__title">${p.title}</h3>
             <p class="project-card__desc">${p.description}</p>
             <div class="project-card__tags">${p.tags.map((t) => `<span class="tag">${t}</span>`).join('')}</div>
-            ${p.demo ? `<div class="project-card__links"><a href="${p.demo}" target="_blank" rel="noopener">Live Demo</a></div>` : ''}
+            ${p.demo || p.source ? `<div class="project-card__links">
+              ${p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener">Live Demo</a>` : ''}
+              ${p.source ? `<a href="${p.source}" target="_blank" rel="noopener">Source Code</a>` : ''}
+            </div>` : ''}
           </div>
         </div>
       `;
