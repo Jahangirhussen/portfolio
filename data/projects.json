@@ -92,24 +92,24 @@
   "games": [
     {
       "title": "Snake Game",
-      "description": "Classic Snake game built with Python and Pygame, with gameplay video output.",
+      "description": "A classic Snake Game developed using Python and Pygame featuring smooth controls, score tracking, and engaging gameplay mechanics.",
       "tags": ["Python", "Pygame"],
       "demo": "https://youtube.com/playlist?list=PLagoYA7rdKmHu4p2rM7y6GGN6UUe_6-10",
-      "source": "https://github.com/Jahangirhussen/Pygame"
+      "source": "https://github.com/Jahangirhussen/Pygame/tree/main/Snake%20Game%20with%20Video%20output"
     },
     {
       "title": "Tic Tac Toe AI",
-      "description": "Tic Tac Toe, Human vs AI — Python/Pygame original, plus a playable JS/minimax version in this site's Play Zone.",
+      "description": "An intelligent Tic Tac Toe game built with Python and Pygame where users can play against an AI opponent, plus a playable JS/minimax version in this site's Play Zone.",
       "tags": ["Python", "Pygame", "JavaScript", "Minimax"],
       "demo": "games/tic-tac-toe/index.html",
-      "source": "https://github.com/Jahangirhussen/Pygame"
+      "source": "https://github.com/Jahangirhussen/Pygame/tree/main/Tic%20Tac%20Toe%20Human%20VS%20AI%20with%20video%20output"
     },
     {
       "title": "Block Dodger",
-      "description": "Reflex-based dodging game built with Python and Pygame.",
+      "description": "A fast-paced arcade game where players dodge incoming obstacles while improving reaction speed and achieving higher scores.",
       "tags": ["Python", "Pygame"],
       "demo": "https://youtube.com/playlist?list=PLagoYA7rdKmHu4p2rM7y6GGN6UUe_6-10",
-      "source": "https://github.com/Jahangirhussen/Pygame"
+      "source": "https://github.com/Jahangirhussen/Pygame/tree/main/Block%20Dodger%20%20game%20%20with%20Jahangir"
     }
   ],
   "other": [
