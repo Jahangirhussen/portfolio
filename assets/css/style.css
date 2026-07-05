@@ -369,7 +369,6 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 700; }
   opacity: 0; pointer-events: none; transition: opacity var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 .back-to-top.visible { opacity: 1; pointer-events: auto; }
-.back-to-top:hover { transform: scale(1.1); box-shadow: var(--glow-blue); }
 
 .whatsapp-btn {
   position: fixed; bottom: 88px; right: 24px; width: 50px; height: 50px;
@@ -377,8 +376,8 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 700; }
   background: #25d366; color: #fff; text-decoration: none;
   z-index: 200; box-shadow: 0 4px 14px rgba(0,0,0,0.3);
   transition: transform var(--transition), box-shadow var(--transition);
+  -webkit-tap-highlight-color: transparent;
 }
-.whatsapp-btn:hover { transform: scale(1.1); box-shadow: 0 0 20px #25d366; }
 
 .mail-btn {
   position: fixed; bottom: 152px; right: 24px; width: 50px; height: 50px;
@@ -386,8 +385,15 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 700; }
   background: var(--btn-gradient); color: #fff; text-decoration: none;
   z-index: 200; box-shadow: 0 4px 14px rgba(0,0,0,0.3);
   transition: transform var(--transition), box-shadow var(--transition);
+  -webkit-tap-highlight-color: transparent;
 }
-.mail-btn:hover { transform: scale(1.1); box-shadow: var(--glow-blue); }
+
+/* Hover-scale only for real pointer devices - avoids "stuck" scaled state on touch tap */
+@media (hover: hover) and (pointer: fine) {
+  .back-to-top:hover { transform: scale(1.1); box-shadow: var(--glow-blue); }
+  .whatsapp-btn:hover { transform: scale(1.1); box-shadow: 0 0 20px #25d366; }
+  .mail-btn:hover { transform: scale(1.1); box-shadow: var(--glow-blue); }
+}
 
 body.nav-open .whatsapp-btn,
 body.nav-open .mail-btn,
